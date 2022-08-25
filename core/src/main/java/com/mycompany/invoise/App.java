@@ -1,6 +1,8 @@
 package com.mycompany.invoise;
 
 import com.mycompany.invoise.entity.Invoice;
+import com.mycompany.invoise.invoiceController.InvoiceController;
+import com.mycompany.invoise.invoiceController.InvoiceControllerMichel;
 import com.mycompany.invoise.service.InvoiceService;
 import com.mycompany.invoise.service.InvoiceServiceMichel;
 
@@ -14,20 +16,17 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Quel est le nom de votre client" );
+
         Scanner scanner = new Scanner(System.in);
-        String customerName = scanner.nextLine();
-        Invoice invoice = new Invoice();
-        invoice.setCustomerName(customerName);
         System.out.println(" Dans quel type de configuration vous trouvez-vous?");
         int conf = scanner.nextInt();
         if(conf==1){
-            InvoiceService invoiceService = new InvoiceService();
-            invoiceService.createInvoice(invoice);
+            InvoiceController invoiceController = new InvoiceController();
+            invoiceController.createInvoiceUsingConsole();
         }
         else if(conf ==2){
-            InvoiceServiceMichel invoiceServiceMichel = new InvoiceServiceMichel();
-            invoiceServiceMichel.createInvoice(invoice);
+            InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
+            invoiceControllerMichel.createInvoiceUsingWebForm();
         }
 
     }
