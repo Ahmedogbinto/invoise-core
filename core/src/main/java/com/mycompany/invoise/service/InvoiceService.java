@@ -2,8 +2,9 @@ package com.mycompany.invoise.service;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.repository.InvoiceRepository;
+import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
 
-public class InvoiceService {
+public class InvoiceService implements InvoiceServiceInterface {
 
     private InvoiceRepository invoiceRepository = new InvoiceRepository();
     private static long lastNumber = 0L;

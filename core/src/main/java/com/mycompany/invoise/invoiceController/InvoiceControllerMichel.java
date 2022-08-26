@@ -4,11 +4,11 @@ import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceService;
 import com.mycompany.invoise.service.InvoiceServiceMichel;
 
-import java.util.Scanner;
 
-public class InvoiceControllerMichel {
 
-    public void createInvoiceUsingWebForm(){
+public class InvoiceControllerMichel implements InvoiceControllerInterface{
+
+    public void createInvoiceUsing(){
         String customerName = "Tesla";
         Invoice invoice = new Invoice();
         invoice.setCustomerName(customerName);
