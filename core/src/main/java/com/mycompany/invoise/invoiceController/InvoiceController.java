@@ -2,12 +2,22 @@ package com.mycompany.invoise.invoiceController;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceService;
+import com.mycompany.invoise.service.InvoiceServiceInterface;
 
 
 import java.util.Scanner;
 
 public class InvoiceController implements InvoiceControllerInterface{
 
+    InvoiceServiceInterface invoiceService;
+
+    public InvoiceServiceInterface getInvoiceService() {
+        return invoiceService;
+    }
+
+    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
+    }
 
     public void createInvoiceUsing(){
         System.out.println( "Quel est le nom de votre client" );
@@ -16,7 +26,7 @@ public class InvoiceController implements InvoiceControllerInterface{
         Invoice invoice = new Invoice();
         invoice.setCustomerName(customerName);
 
-        InvoiceService invoiceService = new InvoiceService();
+
         invoiceService.createInvoice(invoice);
 
     }
