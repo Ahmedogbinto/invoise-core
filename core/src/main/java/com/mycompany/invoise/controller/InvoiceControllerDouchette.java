@@ -1,13 +1,9 @@
-package com.mycompany.invoise.invoiceController;
+package com.mycompany.invoise.controller;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceServiceInterface;
 
-
-import java.util.Scanner;
-
-public class InvoiceControllerKeyboard implements InvoiceControllerInterface{
-
+public class InvoiceControllerDouchette implements InvoiceControllerInterface{
     private InvoiceServiceInterface invoiceServiceInterface;
 
     public InvoiceServiceInterface getInvoiceServiceInterface() {
@@ -18,16 +14,11 @@ public class InvoiceControllerKeyboard implements InvoiceControllerInterface{
         this.invoiceServiceInterface = invoiceServiceInterface;
     }
 
-    public void createInvoiceUsing(){
-        System.out.println( "Quel est le nom de votre client" );
-        Scanner scanner = new Scanner(System.in);
-        String customerName = scanner.nextLine();
+    @Override
+    public void createInvoiceUsing() {
+        System.out.println("Vous utilisez une douchette!");
         Invoice invoice = new Invoice();
-        invoice.setCustomerName(customerName);
-
-
+        invoice.setCustomerName("Koffi Olomide");
         invoiceServiceInterface.createInvoice(invoice);
-
     }
-
 }

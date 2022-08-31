@@ -1,9 +1,10 @@
-package com.mycompany.invoise.invoiceController;
+package com.mycompany.invoise.controller;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceServiceInterface;
 
-public class InvoiceControllerDouchette implements InvoiceControllerInterface{
+
+public class InvoiceControllerWeb implements InvoiceControllerInterface{
     private InvoiceServiceInterface invoiceServiceInterface;
 
     public InvoiceServiceInterface getInvoiceServiceInterface() {
@@ -14,11 +15,12 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface{
         this.invoiceServiceInterface = invoiceServiceInterface;
     }
 
-    @Override
-    public void createInvoiceUsing() {
-        System.out.println("Vous utilisez une douchette!");
+    public void createInvoiceUsing(){
+        String customerName = "Tesla";
         Invoice invoice = new Invoice();
-        invoice.setCustomerName("Koffi Olomide");
+        invoice.setCustomerName(customerName);
+
         invoiceServiceInterface.createInvoice(invoice);
+
     }
 }
