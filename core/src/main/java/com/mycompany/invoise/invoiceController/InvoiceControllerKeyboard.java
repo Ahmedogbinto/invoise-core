@@ -1,22 +1,21 @@
 package com.mycompany.invoise.invoiceController;
 
 import com.mycompany.invoise.entity.Invoice;
-import com.mycompany.invoise.service.InvoiceService;
 import com.mycompany.invoise.service.InvoiceServiceInterface;
 
 
 import java.util.Scanner;
 
-public class InvoiceController implements InvoiceControllerInterface{
+public class InvoiceControllerKeyboard implements InvoiceControllerInterface{
 
-    InvoiceServiceInterface invoiceService;
+    private InvoiceServiceInterface invoiceServiceInterface;
 
-    public InvoiceServiceInterface getInvoiceService() {
-        return invoiceService;
+    public InvoiceServiceInterface getInvoiceServiceInterface() {
+        return invoiceServiceInterface;
     }
 
-    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
-        this.invoiceService = invoiceService;
+    public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
+        this.invoiceServiceInterface = invoiceServiceInterface;
     }
 
     public void createInvoiceUsing(){
@@ -27,7 +26,7 @@ public class InvoiceController implements InvoiceControllerInterface{
         invoice.setCustomerName(customerName);
 
 
-        invoiceService.createInvoice(invoice);
+        invoiceServiceInterface.createInvoice(invoice);
 
     }
 
