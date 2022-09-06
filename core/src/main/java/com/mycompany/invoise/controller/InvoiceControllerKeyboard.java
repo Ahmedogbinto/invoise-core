@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 public class InvoiceControllerKeyboard implements InvoiceControllerInterface{
 
-    private InvoiceServiceInterface invoiceServiceInterface;
+    private InvoiceServiceInterface invoiceService;
 
-    public InvoiceServiceInterface getInvoiceServiceInterface() {
-        return invoiceServiceInterface;
+    public InvoiceServiceInterface getInvoiceService() {
+        return invoiceService;
     }
 
-    public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
-        this.invoiceServiceInterface = invoiceServiceInterface;
+    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
     }
 
     public void createInvoiceUsing(){
@@ -26,7 +26,7 @@ public class InvoiceControllerKeyboard implements InvoiceControllerInterface{
         invoice.setCustomerName(customerName);
 
 
-        invoiceServiceInterface.createInvoice(invoice);
+        invoiceService.createInvoice(invoice);
 
     }
 

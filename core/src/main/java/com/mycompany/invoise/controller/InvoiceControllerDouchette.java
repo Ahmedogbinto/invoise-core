@@ -4,14 +4,14 @@ import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceServiceInterface;
 
 public class InvoiceControllerDouchette implements InvoiceControllerInterface{
-    private InvoiceServiceInterface invoiceServiceInterface;
+    private InvoiceServiceInterface invoiceService;
 
-    public InvoiceServiceInterface getInvoiceServiceInterface() {
-        return invoiceServiceInterface;
+    public InvoiceServiceInterface getInvoiceService() {
+        return invoiceService;
     }
 
-    public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
-        this.invoiceServiceInterface = invoiceServiceInterface;
+    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
     }
 
     @Override
@@ -19,6 +19,6 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface{
         System.out.println("Vous utilisez une douchette!");
         Invoice invoice = new Invoice();
         invoice.setCustomerName("Koffi Olomide");
-        invoiceServiceInterface.createInvoice(invoice);
+        invoiceService.createInvoice(invoice);
     }
 }

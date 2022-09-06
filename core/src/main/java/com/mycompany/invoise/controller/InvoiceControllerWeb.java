@@ -5,14 +5,14 @@ import com.mycompany.invoise.service.InvoiceServiceInterface;
 
 
 public class InvoiceControllerWeb implements InvoiceControllerInterface{
-    private InvoiceServiceInterface invoiceServiceInterface;
+    private InvoiceServiceInterface invoiceService;
 
-    public InvoiceServiceInterface getInvoiceServiceInterface() {
-        return invoiceServiceInterface;
+    public InvoiceServiceInterface getInvoiceService() {
+        return invoiceService;
     }
 
-    public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
-        this.invoiceServiceInterface = invoiceServiceInterface;
+    public void setInvoiceService(InvoiceServiceInterface invoiceService) {
+        this.invoiceService = invoiceService;
     }
 
     public void createInvoiceUsing(){
@@ -20,7 +20,7 @@ public class InvoiceControllerWeb implements InvoiceControllerInterface{
         Invoice invoice = new Invoice();
         invoice.setCustomerName(customerName);
 
-        invoiceServiceInterface.createInvoice(invoice);
+        invoiceService.createInvoice(invoice);
 
     }
 }

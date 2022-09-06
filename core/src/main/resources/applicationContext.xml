@@ -2,17 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
 
-    <bean class="com.mycompany.invoise.controller.InvoiceControllerDouchette">
-        <property name="invoiceServiceInterface" ref="invoiceService"/>
+    <bean class="com.mycompany.invoise.controller.InvoiceControllerWeb">
     </bean>
 
-    <bean id ="invoiceService" class="com.mycompany.invoise.service.InvoiceServicePrefixe">
-        <property name="invoiceRepositoryInterface" ref="invoiceRepository"/>
+    <bean class="com.mycompany.invoise.service.InvoiceServicePrefix">
+        <property name="prefix" value="NUM_"/>
+        <property name="lastNumber" value="118"/>
     </bean>
 
-    <bean id ="invoiceRepository" class="com.mycompany.invoise.repository.InvoiceRepositoryDatabase"/>
+    <bean  class="com.mycompany.invoise.repository.InvoiceRepositoryDatabase"/>
 
 
 </beans>
