@@ -2,10 +2,12 @@ package com.mycompany.invoise.service;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
 
-      InvoiceRepositoryInterface invoiceRepository;
+    @Autowired
+    InvoiceRepositoryInterface invoiceRepository;
 
     public InvoiceRepositoryInterface getInvoiceRepository() {
         return invoiceRepository;

@@ -1,7 +1,6 @@
 package com.mycompany.invoise;
 
 import com.mycompany.invoise.controller.InvoiceControllerInterface;
-import com.mycompany.invoise.controller.InvoiceControllerKeyboard;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
