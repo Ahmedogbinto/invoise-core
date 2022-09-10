@@ -19,8 +19,10 @@ import org.springframework.stereotype.Repository;
         this.invoiceRepository = invoiceRepository;
     }
 
-    @Value("${invoice.lastNumber}") private long lastNumber;
-    @Value("${invoice.prefix}") private String prefix;
+    @Value("${invoice.lastNumber}")
+    private long lastNumber;
+    @Value("${invoice.prefix}")
+    private String prefix;
 
     public long getLastNumber() {
         return lastNumber;
