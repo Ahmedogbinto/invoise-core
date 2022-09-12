@@ -1,4 +1,4 @@
-package com.mycompany.invoise.controller.scan;
+package com.mycompany.invoise.controller.keyboard;
 
 import com.mycompany.invoise.controller.InvoiceControllerInterface;
 import com.mycompany.invoise.entity.Invoice;
@@ -9,7 +9,8 @@ import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
-@Controller public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
+//@Controller
+public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
 
     @Autowired
     private InvoiceServiceInterface invoiceService;
