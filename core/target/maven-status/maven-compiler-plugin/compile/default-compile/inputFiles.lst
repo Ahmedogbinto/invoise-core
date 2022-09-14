@@ -1,0 +1,12 @@
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\App.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\controller\scan\InvoiceControllerDouchette.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\repository\InvoiceRepositoryInterface.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\repository\memory\InvoiceRepositoryMemory.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\controller\InvoiceControllerInterface.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\controller\web\InvoiceControllerWeb.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\service\InvoiceServiceInterface.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\controller\keyboard\InvoiceControllerKeyboard.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\service\prefix\InvoiceServicePrefix.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\entity\Invoice.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\repository\database\InvoiceRepositoryDatabase.java
+D:\Projets\JavaProject\invoise-core\core\src\main\java\com\mycompany\invoise\service\number\InvoiceServiceNumber.java
