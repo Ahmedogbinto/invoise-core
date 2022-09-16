@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
     @RequestMapping("/invoice-home")
     public String displayHome(){
         System.out.println(" La méthode display home a bien été invoqué");
-        return " ";
+        return "index";
     }
 }
 
