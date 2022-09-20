@@ -6,6 +6,8 @@ import com.mycompany.invoise.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 //@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     @Autowired
@@ -27,5 +29,10 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
         invoiceRepository.create(invoice);
 
         System.out.println("la facture a bien été ajouté, le nom du client c'est "+invoice.getCustomerName()+" et le numero de facture est "+invoice.getNumber());
+    }
+
+    @Override
+    public List<Invoice> getInvoiceList() {
+        return invoiceRepository.list();
     }
 }

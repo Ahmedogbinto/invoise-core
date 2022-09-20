@@ -2,10 +2,21 @@
 <html lang="en" xmlns:th ="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Bonjour</title>
+    <title>Application de gestion de facture</title>
 </head>
 <body>
-<h1>Bonjour Ahmed!!!yes</h1>
-<span th:text="${#locale.country}"></span>
+<h1>Bienvenu dans la page de gestion des factures</h1>
+<h2>Actions disponibles</h2>
+    <ul>
+        <li><a href="">Ajout de facture</a></li>
+    </ul>
+<table border="1">                                                                     <!--Pour retourner le resultat sous la forme dun tableau-->
+                                                                            <!--tr et td  pour lignes et les colonnes d<un tableau-->
+    <tr th:each="invoice: ${invoices}">                                     <!--Nous utilisons ${invoices} pour recuperer les elts de la liste invoices et invoice: est le nomn que nous donnons a chaque elt de la liste pour travailler avec-->
+
+        <td th:text="${invoice.number}"></td>                               <!--Nous utilisons le nom invoice(peu importe) donne a notre variable plus haut -->
+        <td th:text="${invoice.customerName}"></td>
+    </tr>
+</table>
 </body>
 </html>

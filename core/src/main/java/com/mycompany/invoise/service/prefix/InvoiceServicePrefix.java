@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     @Autowired
@@ -49,9 +51,8 @@ import org.springframework.stereotype.Repository;
     }
 
 
-
-
-
-
-
+    @Override
+    public List<Invoice> getInvoiceList() {
+        return invoiceRepository.list();
+    }
 }
