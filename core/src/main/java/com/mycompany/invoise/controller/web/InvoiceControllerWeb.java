@@ -5,6 +5,7 @@ import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -32,11 +33,11 @@ import java.util.List;
     }
 
     @RequestMapping("/invoice-home")
-    public String displayHome(HttpServletRequest req){
+    public @ModelAttribute("invoices") List<Invoice>displayHome(){
         System.out.println(" La méthode display home a bien été invoqué");
         List<Invoice> invoices=invoiceService.getInvoiceList();
-        req.setAttribute("invoices",invoices);    // Pour fournir un element de model a la vue mais ce n<est pqs le plus courant a utiliser
-        return "index";
+        //req.setAttribute("invoices",invoices);    // Pour fournir un element de model a la vue mais ce n<est pqs le plus courant a utiliser
+        return invoices;
     }
 
 
