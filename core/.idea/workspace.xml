@@ -30,14 +30,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/web/InvoiceControllerWeb.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/database/InvoiceRepositoryDatabase.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../invoise-webUser/src/main/java/com/mycompany/invoise/invoisewebUser/controller/InvoiceControllerWeb.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -54,12 +59,12 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Projets/JavaProject/invoise-core/core/src/main/resources/static",
+    "last_opened_file_path": "D:/Projets/JavaProject/invoise-webUser/pom.xml",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propCompiler"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,10 +73,17 @@
       <recent name="D:\Projets\JavaProject\invoise-core\core\src\main\ressources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources\templates" />
+      <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources" />
       <recent name="D:\Projets\JavaProject\invoise-core\core\src\main\resources\templates" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mycompany.invoisewebUser" />
+      <recent name="" />
+      <recent name="com.mycompany" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.mycompany.invoise.InvoiseWebUserApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.invoise.App" />
       <module name="core" />
@@ -85,8 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.mycompany.invoise.InvoiseWebUserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.invoise.InvoiseWebUserApplication" />
+      <module name="invoise-webUser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.invoise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.mycompany.invoise.InvoiseWebUserApplication" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
