@@ -32,7 +32,7 @@ import java.util.List;
     @Override
     public Invoice getById(String number) {
         Invoice invoice1 = new Invoice();
-        invoice1.setCustomerName(number);
+        invoice1.setNumber(number);
         invoice1.setCustomerName("EDF");
         invoice1.setOrderNumber("ON_002");
         return invoice1;
