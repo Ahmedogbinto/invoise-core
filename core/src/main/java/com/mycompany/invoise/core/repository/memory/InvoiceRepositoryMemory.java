@@ -15,9 +15,13 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
         System.out.println("La la facture a bien été ajouté");
     }
-
     @Override
     public List<Invoice> list() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Invoice getById(String number) {
         throw new UnsupportedOperationException();
     }
 }

@@ -28,4 +28,13 @@ import java.util.List;
 
         return List.of(invoice1,invoice2);
 }
+
+    @Override
+    public Invoice getById(String number) {
+        Invoice invoice1 = new Invoice();
+        invoice1.setCustomerName(number);
+        invoice1.setCustomerName("EDF");
+        invoice1.setOrderNumber("ON_002");
+        return invoice1;
+    }
 }

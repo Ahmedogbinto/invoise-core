@@ -50,9 +50,13 @@ import java.util.List;
         System.out.println("la facture a bien été ajouté, le nom du client c'est "+invoice.getCustomerName()+" et le numero de facture est "+invoice.getNumber());
     }
 
-
     @Override
     public List<Invoice> getInvoiceList() {
         return invoiceRepository.list();
+    }
+
+    @Override
+    public Invoice getInvoiceByNumber(String number) {
+        return invoiceRepository.getById(number);
     }
 }

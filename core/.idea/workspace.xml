@@ -59,7 +59,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Projets/JavaProject/invoise-webUser/pom.xml",
+    "last_opened_file_path": "D:/Projets/JavaProject/invoise-webUser/src/main/resources/templates",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -69,6 +69,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources\templates" />
       <recent name="D:\Projets\JavaProject\invoise-core\core\src\main\resources\static" />
       <recent name="D:\Projets\JavaProject\invoise-core\core\src\main\ressources" />
     </key>
