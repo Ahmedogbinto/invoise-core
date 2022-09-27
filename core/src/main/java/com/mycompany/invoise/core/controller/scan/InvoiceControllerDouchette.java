@@ -20,10 +20,12 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface {
     }
 
     @Override
-    public void createInvoiceUsing() {
+    public String createInvoiceUsing(Invoice invoice) {
         System.out.println("Vous utilisez une douchette!");
-        Invoice invoice = new Invoice();
+        invoice = new Invoice();
         invoice.setCustomerName("Koffi Olomide");
         invoiceService.createInvoice(invoice);
+
+        return null;
     }
 }
