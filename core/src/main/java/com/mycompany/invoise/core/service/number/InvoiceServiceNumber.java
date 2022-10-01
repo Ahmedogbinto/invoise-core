@@ -4,13 +4,14 @@ import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//@Service
+@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
     @Autowired
-    InvoiceRepositoryInterface invoiceRepository;
+    private InvoiceRepositoryInterface invoiceRepository;
 
     public InvoiceRepositoryInterface getInvoiceRepository() {
         return invoiceRepository;
@@ -20,15 +21,13 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
         this.invoiceRepository = invoiceRepository;
     }
 
-    private static long lastNumber = 0L;
-
+    // private static long lastNumber = 0L;
+    //On ne veut generer ce numero au niveau du service mais au niveau de la base de données, on peut le supprimer.
     public Invoice createInvoice(Invoice invoice){
-        invoice.setNumber(String.valueOf(++lastNumber));
-
-        invoiceRepository.create(invoice);
-
-        System.out.println("la facture a bien été ajouté, le nom du client c'est "+invoice.getCustomerName()+" et le numero de facture est "+invoice.getNumber());
-    return invoice;
+         // invoice.setNumber(String.valueOf(++lastNumber));
+        // invoiceRepository.create(invoice);
+       //System.out.println("la facture a bien été ajouté, le nom du client c'est "+invoice.getCustomerName()+" et le numero de facture est "+invoice.getNumber());
+    return invoiceRepository.create(invoice);
     }
 
     @Override

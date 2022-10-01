@@ -5,11 +5,12 @@ import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Repository public class InvoiceServicePrefix implements InvoiceServiceInterface {
+//@Service
+public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     @Autowired
     private InvoiceRepositoryInterface invoiceRepository;
@@ -47,7 +48,7 @@ import java.util.List;
 
         invoiceRepository.create(invoice);
 
-        System.out.println("la facture a bien été ajouté, le nom du client c'est "+invoice.getCustomerName()+" et le numero de facture est "+invoice.getNumber());
+        System.out.println("la facture a bien été ajouté");
     return invoice;
     }
 
