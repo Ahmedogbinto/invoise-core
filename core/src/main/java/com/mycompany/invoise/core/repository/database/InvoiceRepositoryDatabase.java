@@ -42,7 +42,7 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 
         return jdbcTemplate.query("SELECT INVOICE_NUMBER,CUSTOMER_NAME FROM INVOICE",
                 (rs,rowNum) -> new Invoice(String.valueOf(rs.getLong("INVOICE_NUMBER")),
-                        rs.getString("CUSTOMER_NAME")) );
+                        rs.getString("CUSTOMER_NAME")));
 
     }
 
