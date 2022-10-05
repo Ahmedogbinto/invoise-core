@@ -1,5 +1,6 @@
 package com.mycompany.invoise.core.repository.database;
-
+// A cause de spring-data-jdbc nous avons opéré la magie de supprimer la classes InvoiceRepositoryDatabase.java
+/*
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,3 +59,4 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 
     }
 }
+*/

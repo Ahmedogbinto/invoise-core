@@ -1,6 +1,12 @@
 package com.mycompany.invoise.core.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+
 public class Invoice {
+    // Attention cet @Id et @Column vient de spring-data-jdbc et non de la persistence JPA
+    @Id
+    @Column("INVOICE_NUMBER")
     private String number;
     private String customerName;
     private String orderNumber;
