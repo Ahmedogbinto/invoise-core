@@ -65,6 +65,11 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
     public boolean existsById(String s) {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public void deleteAllById(Iterable<? extends String> strings) {
+        throw new UnsupportedOperationException();
+    }
 }
 
 
