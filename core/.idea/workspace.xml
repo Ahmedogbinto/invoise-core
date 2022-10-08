@@ -117,9 +117,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in invoise-webUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoise-webUser" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.mycompany.invoise.InvoiseWebUserApplication" />
+        <item itemvalue="JUnit.All in invoise-webUser" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>

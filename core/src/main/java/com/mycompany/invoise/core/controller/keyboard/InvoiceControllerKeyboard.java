@@ -1,6 +1,7 @@
 package com.mycompany.invoise.core.controller.keyboard;
 
 import com.mycompany.invoise.core.controller.InvoiceControllerInterface;
+import com.mycompany.invoise.core.entity.Customer;
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,9 @@ public class InvoiceControllerKeyboard implements InvoiceControllerInterface {
         Scanner scanner = new Scanner(System.in);
         String customerName = scanner.nextLine();
         invoice = new Invoice();
-        invoice.setCustomerName(customerName);
+
+        Customer customer = new Customer(customerName);
+        invoice.setCustomer(customer);
 
 
         invoiceService.createInvoice(invoice);

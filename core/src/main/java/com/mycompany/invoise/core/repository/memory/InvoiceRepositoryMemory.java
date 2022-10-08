@@ -13,7 +13,7 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
     public Invoice save(Invoice invoice){
         invoices.add(invoice);
-        System.out.println("La la facture a bien été cééé avec pour numero de facture "+invoice.getNumber()+" et pour nom "+invoice.getCustomerName());
+        System.out.println("La la facture a bien été cééé avec pour numero de facture "+invoice.getNumber()+" et pour nom "+invoice.getCustomer().getName());
     return  invoice;
     }
     @Override
