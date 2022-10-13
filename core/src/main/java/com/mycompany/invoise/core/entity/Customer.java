@@ -12,6 +12,8 @@ public class Customer {
     @Column(nullable = false,length = 50)
     private String name;
 
+    // ascade = CascadeType.ALL nous permet de persister l'adresse à chaque fois que l'on crée une facture;
+    // ALL pour dire a chaque que l'adresse a besoin d'être persistée
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL,orphanRemoval = true,optional = false)
     @JoinColumn(name="ID_ADDRESS")
     private Address address;
