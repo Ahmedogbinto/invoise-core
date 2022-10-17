@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../../invoise-webUser/pom.xml" />
+        <option value="$PROJECT_DIR$/../../customer/customer/pom.xml" />
+        <option value="$PROJECT_DIR$/../../product/product/pom.xml" />
+        <option value="$PROJECT_DIR$/../../invoice/invoice/pom.xml" />
       </list>
     </option>
   </component>
