@@ -1,7 +1,7 @@
 package com.mycompany.invoise.core.service.number;
 
 import com.mycompany.invoise.core.entity.invoice.Invoice;
-import com.mycompany.invoise.core.repository.CustomerRepositoryInterface;
+
 import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     private InvoiceRepositoryInterface invoiceRepository;
 
     @Autowired
-    private CustomerRepositoryInterface customerRepository;
+    /*private CustomerRepositoryInterface customerRepository;*/
 
 
     public InvoiceRepositoryInterface getInvoiceRepository() {
@@ -28,7 +28,7 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     
     @Transactional
     public Invoice createInvoice(Invoice invoice){
-            customerRepository.save(invoice.getCustomer());
+        // customerRepository.save(invoice.getCustomer());
         return invoiceRepository.save(invoice);
 
     }

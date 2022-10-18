@@ -86,6 +86,7 @@
       <recent name="com.mycompany" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany.invoise.customer.api" />
       <recent name="com.mycompany.invoise.core.repository.memory" />
       <recent name="com.mycompany.invoise.invoisewebUser.api" />
       <recent name="com.mycompany.invoise.invoisewebUser.form" />
@@ -154,9 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomerApplication" />
         <item itemvalue="Application.InvoiceApplication" />
         <item itemvalue="Application.ProductApplication" />
-        <item itemvalue="Application.CustomerApplication" />
         <item itemvalue="Application.com.mycompany.invoise.InvoiseWebUserApplication" />
         <item itemvalue="JUnit.All in invoise-webUser" />
       </list>
