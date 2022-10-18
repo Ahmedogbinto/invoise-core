@@ -1,7 +1,7 @@
 package com.mycompany.invoise.core.repository;
 
 
-import com.mycompany.invoise.core.entity.Customer;
+import com.mycompany.invoise.core.entity.customer.Customer;
 
 import org.springframework.data.repository.CrudRepository;
 

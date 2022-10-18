@@ -1,6 +1,6 @@
 package com.mycompany.invoise.core.repository.memory;
 
-import com.mycompany.invoise.core.entity.Invoice;
+import com.mycompany.invoise.core.entity.invoice.Invoice;
 import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 
 import java.util.ArrayList;

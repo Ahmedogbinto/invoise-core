@@ -1,5 +1,7 @@
-package com.mycompany.invoise.core.entity;
+package com.mycompany.invoise.core.entity.customer;
 
+
+import com.mycompany.invoise.core.entity.customer.Address;
 
 import javax.persistence.*;
 
