@@ -30,9 +30,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../invoice/invoice/src/main/java/com/mycompany/invoise/invoice/controller/InvoiceControllerWeb.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/database/InvoiceRepositoryDatabase.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../invoise-webUser/src/main/java/com/mycompany/invoise/invoisewebUser/controller/InvoiceControllerWeb.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,6 +76,8 @@
       <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projets\JavaProject\invoice\invoice\src\main\resources\static" />
+      <recent name="D:\Projets\JavaProject\invoice\invoice\src\main\resources\templates" />
       <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources\templates" />
       <recent name="D:\Projets\JavaProject\invoise-webUser\src\main\resources" />
       <recent name="D:\Projets\JavaProject\invoise-core\core\src\main\resources\templates" />
@@ -155,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CustomerApplication" />
         <item itemvalue="Application.InvoiceApplication" />
+        <item itemvalue="Application.CustomerApplication" />
         <item itemvalue="Application.ProductApplication" />
         <item itemvalue="Application.com.mycompany.invoise.InvoiseWebUserApplication" />
         <item itemvalue="JUnit.All in invoise-webUser" />
