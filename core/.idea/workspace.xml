@@ -163,9 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InvoiceApplication" />
         <item itemvalue="Application.ProductApplication" />
         <item itemvalue="Application.CustomerApplication" />
+        <item itemvalue="Application.InvoiceApplication" />
         <item itemvalue="Application.ServiceDiscoveryApplication" />
         <item itemvalue="Application.com.mycompany.invoise.InvoiseWebUserApplication" />
       </list>
